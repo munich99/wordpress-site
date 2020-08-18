@@ -3,7 +3,12 @@
 /* inStyle (v1.6.3) github.com/salsita/inStyle 2016 | MIT @mixin ============================= */
 /* FILE: main/custom-styles/_main.scss */
 /* FILE: main/custom-styles/__extenders.scss */
-.button, button, input[type="button"], input[type="reset"], input[type="submit"], .main-navigation-container .button > a, .menu-toggle, mark, #page mark, .highlight, #page .highlight, .pagination .current, .bypostauthor > .comment-body .comment-author::before, .widget_calendar tbody a, .widget .tagcloud a:hover, .widget .tagcloud a:focus, .widget .tagcloud a:active, .slick-slider .slick-arrow, .slick-slider .slick-dots button:hover, .slick-slider .slick-dots button:focus, .slick-slider .slick-active button, .posts .sticky::before, .format-image .entry-media::before, .format-quote.entry, .format-status.entry, .type-jetpack-testimonial.entry, .post-navigation .nav-links a, .sidebar .widget .current_page_item > a, .sidebar .widget .current-menu-item > a, .site #infinite-handle span { background-color: #00855b; color: #ffffff; background-color: var(--color_accent); color: var(--color_accent_text); }
+.button, button, input[type="button"], input[type="reset"], input[type="submit"],
+.main-navigation-container .button > a,
+.menu-toggle, mark, #page mark, .highlight, #page .highlight, .pagination .current, .bypostauthor > .comment-body .comment-author::before, .widget_calendar tbody a, .widget .tagcloud a:hover, .widget .tagcloud a:focus, .widget .tagcloud a:active, .slick-slider .slick-arrow, .slick-slider .slick-dots button:hover, .slick-slider .slick-dots button:focus, .slick-slider .slick-active button, .posts .sticky::before, .format-image .entry-media::before, .format-quote.entry, .format-status.entry, .type-jetpack-testimonial.entry, .post-navigation .nav-links a, .sidebar .widget .current_page_item > a, .sidebar .widget .current-menu-item > a, .site #infinite-handle span { 
+    background-color: #00855b; color: #ffffff;
+    background-color: var(--color_accent); color: var(--color_accent_text); 
+}
 
 .site-content div.sharedaddy .sd-content ul li a.sd-button:not(.no-text) { background-color: #00855b; background-color: var(--color_accent); }
 
@@ -76,7 +81,14 @@ mark, .highlight { -webkit-box-shadow: 0.38em 0 0 #00855b, -0.38em 0 0 #00855b; 
 .custom-logo, .fl-builder-edit .custom-logo { max-height: 100px; max-height: var(--custom_logo_height); }
 
 /* FILE: main/custom-styles/__menu.scss */
-@media only screen and (min-width: 55em) { .main-navigation-container li ul { background-color: #0a0c0e; color: #ffffff; background-color: var(--color_header_background); color: var(--color_header_text); } }
+@media only screen and (min-width: 55em) { 
+    .main-navigation-container li ul { 
+        background-color: #9ae2e7;
+        color: #0a0c0e;
+       /* background-color: var(--color_header_background); color: var(--color_header_text); */
+
+    } 
+}
 
 @media only screen and (max-width: 54.9375em) { .has-navigation-mobile .main-navigation-container { background-color: #0a0c0e; color: #ffffff; border-color: rgba(255, 255, 255, 0.2); background-color: var(--color_header_background); color: var(--color_header_text); border-color: var(--color_header_text--a20); } }
 
