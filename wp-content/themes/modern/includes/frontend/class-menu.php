@@ -396,6 +396,7 @@ class Modern_Menu {
 			 */
 			public static function get_menu_args_social( $items_wrap = '<ul data-id="%1$s" class="%2$s">%3$s</ul>' ) {
 
+				
 				// Output
 
 					return array(
@@ -504,6 +505,7 @@ class Modern_Menu {
 
 					$social_icons = Modern_SVG::get_social_icons();
 					$social_icon  = 'chain';
+					$yy = '<span>xx</span>'; // for chain
 
 
 				// Processing
@@ -511,13 +513,14 @@ class Modern_Menu {
 					foreach ( $social_icons as $url => $icon ) {
 						if ( false !== strpos( $item_output, $url ) ) {
 							$social_icon = $icon;
+							$yy = '';
 							break;
 						}
 					}
 
 					$item_output = str_replace(
 						'<!--{{icon}}-->',
-						'<!--{{icon}}-->' . Modern_SVG::get( array(
+						$yy . '<!--{{icon}}-->' . Modern_SVG::get( array(
 							'icon' => esc_attr( $social_icon ),
 							'base' => 'social-icon',
 						) ),
@@ -582,7 +585,7 @@ class Modern_Menu {
 
 				// Output
 
-					return $nav_menu_args;
+					return $menu_args;
 
 			} // /social_widget
 
