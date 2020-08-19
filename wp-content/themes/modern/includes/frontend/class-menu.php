@@ -508,8 +508,7 @@ class Modern_Menu {
 				// Variables
 
 					$social_icons = Modern_SVG::get_social_icons();
-					$social_icon  = 'chain';
-					$yy = ''; // for chain
+					$social_icon  = 'chain';					
 
 
 				// Processing
