@@ -473,7 +473,10 @@ class Modern_Menu {
 						'xing.com'          => 'xing',
 						'yelp.com'          => 'yelp',
 						'youtube.com'       => 'youtube',
-						'/unternehmen'       => 'unternehmen',
+						'/unternehmen'      => 'Unternehmen',
+						'/messen'      		=> 'Messen',
+						'/downloads'      	=> 'Downloads',
+						'/aktuelles'      	=> 'Aktuelles',
 					);
 
 			} // /social_links_icons
@@ -506,7 +509,7 @@ class Modern_Menu {
 
 					$social_icons = Modern_SVG::get_social_icons();
 					$social_icon  = 'chain';
-					$yy = '<span>xx</span>'; // for chain
+					$yy = ''; // for chain
 
 
 				// Processing
@@ -517,10 +520,16 @@ class Modern_Menu {
 							$social_icon = $icon;
 							
 							if ( $url == '/unternehmen'  ) {
-								$yy = '<span>' . $icon .'</span>';
+								$yy = '<span class="social-info">' . $icon .'</span>';
 							 }
-							 else {
-								$yy = '';
+							if ( $url == '/messen'  ) {
+								$yy = '<span class="social-info">' . $icon .'</span>';
+							 }
+							if ( $url == '/downloads'  ) {
+								$yy = '<span class="social-info">' . $icon .'</span>';
+							 }
+							if ( $url == '/aktuelles'  ) {
+								$yy = '<span class="social-info">' . $icon .'</span>';
 							 }
 							break;
 						}	

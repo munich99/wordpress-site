@@ -1972,4 +1972,8 @@ div.sharedaddy { margin: 2.6244rem auto 0; }
   .entry-content-container, .content-layout-no-paddings div#jp-relatedposts, .content-layout-no-paddings div.sharedaddy, .content-layout-no-paddings .entry-author { max-width: calc( 94ch + 3.24em); }
   .footer-widgets .widget { min-width: 10em; } }
 
-@media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) { .main-navigation-container .megamenu > ul > li { min-width: 14em; } }
+@media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+  .main-navigation-container .megamenu > ul > li { min-width: 14em; } 
+}
+
+
