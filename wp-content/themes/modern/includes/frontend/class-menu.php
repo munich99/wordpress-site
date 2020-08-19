@@ -473,6 +473,7 @@ class Modern_Menu {
 						'xing.com'          => 'xing',
 						'yelp.com'          => 'yelp',
 						'youtube.com'       => 'youtube',
+						'/unternehmen'       => 'unternehmen',
 					);
 
 			} // /social_links_icons
@@ -510,12 +511,19 @@ class Modern_Menu {
 
 				// Processing
 
-					foreach ( $social_icons as $url => $icon ) {
+					foreach ( $social_icons as $url => $icon ) {						
+
 						if ( false !== strpos( $item_output, $url ) ) {
 							$social_icon = $icon;
-							$yy = '';
+							
+							if ( $url == '/unternehmen'  ) {
+								$yy = '<span>' . $icon .'</span>';
+							 }
+							 else {
+								$yy = '';
+							 }
 							break;
-						}
+						}	
 					}
 
 					$item_output = str_replace(
